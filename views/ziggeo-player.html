@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Ziggeo POC</title>
+    <link rel="stylesheet" href="/v2.31.2-2018-04-18.css" />
+    <script src="/v2.31.2-2018-04-18.js"></script>
+    <script>
+        window.app = new window.ZiggeoApi.V2.Application({
+            token: 'app-token',
+            webrtc_streaming: true,
+            auth: true
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Ziggeo player</h1>
+    <player></player>
+    <script src="/ziggeo-player.js"></script>
+</body>
+</html>

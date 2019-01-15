@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@itslearning/protomorph": "https://github.com/itslearning/protomorph.git",
+    "express": "^4.16.3",
+    "nodemon": "1.17.5",
+    "sirv": "^0.2.2",
+    "whatwg-fetch": "2.0.4",
+    "ziggeo": "0.1.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "serve": "nodemon server.js --inspect",
+    "all": "yarn install && webpack && nodemon server.js --inspect"
+  }
+}
